@@ -26,6 +26,7 @@
     "concurrently": "^8.2.2"
   },
   "dependencies": {
-    "@dataconnect/generated": "file:dataconnect-generated/js/example-connector"
+    "@dataconnect/generated": "file:dataconnect-generated/js/example-connector",
+    "react-scripts": "^5.0.1"
   }
 }
