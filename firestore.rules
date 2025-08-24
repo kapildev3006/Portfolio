@@ -1,0 +1,54 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+
+    function isAuthenticated() {
+      return request.auth != null;
+    }
+
+    function isNonEmptyString(field, maxLen) {
+      return request.resource.data[field] is string
+        && request.resource.data[field].size() > 0
+        && request.resource.data[field].size() <= maxLen;
+    }
+
+    // Publicly readable collections
+    match /projects/{projectId} {
+      allow read: if true;
+      allow create, update, delete: if isAuthenticated();
+    }
+    match /portfolio/{docId} {
+      allow read: if true;
+      allow create, update, delete: if isAuthenticated();
+    }
+    match /skills/{skillId} {
+      allow read: if true;
+      allow create, update, delete: if isAuthenticated();
+    }
+
+    // All other collections: only authenticated users can read/write
+    match /{document=**} {
+      allow read, write: if isAuthenticated();
+    }
+
+    // Messages data: allow anyone to create, and authenticated users to read, update, delete
+    match /messages/{messageId} {
+      allow create: if true;
+      allow read, update, delete: if isAuthenticated();
+    }
+
+    // Contact form: anyone can create; no read/update/delete from clients
+    match /contacts/{contactId} {
+      allow read, update, delete: if false;
+      allow create: if (
+  isNonEmptyString('name', 100) &&
+  isNonEmptyString('email', 320) &&
+  isNonEmptyString('subject', 150) &&
+  isNonEmptyString('message', 5000) &&
+  (!('status' in request.resource.data) || request.resource.data.status == 'new') &&
+  ('createdAt' in request.resource.data && request.resource.data.createdAt is timestamp) &&
+  request.resource.data.email.matches('.*@.*\\..*')
+      );
+    }
+  }
+}

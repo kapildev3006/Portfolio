@@ -1,0 +1,130 @@
+[debug] [2025-08-24T19:05:56.709Z] ----------------------------------------------------------------------
+[debug] [2025-08-24T19:05:56.713Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\kdev7\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only firestore:rules
+[debug] [2025-08-24T19:05:56.714Z] CLI Version:   14.14.0
+[debug] [2025-08-24T19:05:56.714Z] Platform:      win32
+[debug] [2025-08-24T19:05:56.714Z] Node Version:  v22.15.0
+[debug] [2025-08-24T19:05:56.714Z] Time:          Mon Aug 25 2025 00:35:56 GMT+0530 (India Standard Time)
+[debug] [2025-08-24T19:05:56.715Z] ----------------------------------------------------------------------
+[debug] 
+[error] 
+[error] Error: Cannot understand what targets to deploy/serve. No targets in firebase.json match '--only firestore:rules'. If you are using PowerShell make sure you place quotes around any comma-separated lists (ex: --only "functions,firestore").
+[debug] [2025-08-24T19:06:23.049Z] ----------------------------------------------------------------------
+[debug] [2025-08-24T19:06:23.055Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\kdev7\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only firestore:rules
+[debug] [2025-08-24T19:06:23.056Z] CLI Version:   14.14.0
+[debug] [2025-08-24T19:06:23.056Z] Platform:      win32
+[debug] [2025-08-24T19:06:23.056Z] Node Version:  v22.15.0
+[debug] [2025-08-24T19:06:23.057Z] Time:          Mon Aug 25 2025 00:36:23 GMT+0530 (India Standard Time)
+[debug] [2025-08-24T19:06:23.057Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-08-24T19:06:23.405Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-08-24T19:06:23.494Z] Error: Could not load the default credentials. Browse to https://cloud.google.com/docs/authentication/getting-started for more information.
+    at GoogleAuth.getApplicationDefaultAsync (C:\Users\kdev7\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\google-auth-library\build\src\auth\googleauth.js:287:15)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async GoogleAuth._GoogleAuth_determineClient (C:\Users\kdev7\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\google-auth-library\build\src\auth\googleauth.js:834:32)
+    at async GoogleAuth.getClient (C:\Users\kdev7\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\google-auth-library\build\src\auth\googleauth.js:698:20)
+    at async GoogleAuth.getAccessToken (C:\Users\kdev7\AppData\Roaming\npm\node_modules\firebase-tools\node_modules\google-auth-library\build\src\auth\googleauth.js:722:24)
+    at async autoAuth (C:\Users\kdev7\AppData\Roaming\npm\node_modules\firebase-tools\lib\requireAuth.js:28:19)
+    at async requireAuth (C:\Users\kdev7\AppData\Roaming\npm\node_modules\firebase-tools\lib\requireAuth.js:91:20)
+    at async requirePermissions (C:\Users\kdev7\AppData\Roaming\npm\node_modules\firebase-tools\lib\requirePermissions.js:17:5)
+    at async C:\Users\kdev7\AppData\Roaming\npm\node_modules\firebase-tools\lib\command.js:248:17
+[error] 
+[error] Error: Failed to authenticate, have you run firebase login?
+[debug] [2025-08-24T19:09:31.820Z] ----------------------------------------------------------------------
+[debug] [2025-08-24T19:09:31.825Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\kdev7\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js deploy --only firestore:rules
+[debug] [2025-08-24T19:09:31.825Z] CLI Version:   14.14.0
+[debug] [2025-08-24T19:09:31.826Z] Platform:      win32
+[debug] [2025-08-24T19:09:31.826Z] Node Version:  v22.15.0
+[debug] [2025-08-24T19:09:31.826Z] Time:          Mon Aug 25 2025 00:39:31 GMT+0530 (India Standard Time)
+[debug] [2025-08-24T19:09:31.827Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-08-24T19:09:32.162Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-08-24T19:09:32.164Z] > authorizing via signed-in user (kdev7830@gmail.com)
+[debug] [2025-08-24T19:09:32.164Z] [iam] checking project my-portpolio-98534 for permissions ["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]
+[debug] [2025-08-24T19:09:32.165Z] Checked if tokens are valid: true, expires at: 1756066140885
+[debug] [2025-08-24T19:09:32.166Z] Checked if tokens are valid: true, expires at: 1756066140885
+[debug] [2025-08-24T19:09:32.167Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-portpolio-98534:testIamPermissions [none]
+[debug] [2025-08-24T19:09:32.168Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-portpolio-98534:testIamPermissions x-goog-quota-user=projects/my-portpolio-98534
+[debug] [2025-08-24T19:09:32.168Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-portpolio-98534:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]}
+[debug] [2025-08-24T19:09:34.713Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-portpolio-98534:testIamPermissions 200
+[debug] [2025-08-24T19:09:34.714Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-portpolio-98534:testIamPermissions {"permissions":["datastore.indexes.create","datastore.indexes.delete","datastore.indexes.list","datastore.indexes.update","firebase.projects.get"]}
+[info] 
+[info] === Deploying to 'my-portpolio-98534'...
+[info] 
+[info] i  deploying firestore 
+[info] i  cloud.firestore: checking firestore.rules for compilation errors... 
+[debug] [2025-08-24T19:09:34.721Z] Checked if tokens are valid: true, expires at: 1756066140885
+[debug] [2025-08-24T19:09:34.721Z] Checked if tokens are valid: true, expires at: 1756066140885
+[debug] [2025-08-24T19:09:34.721Z] >>> [apiv2][query] POST https://firebaserules.googleapis.com/v1/projects/my-portpolio-98534:test [none]
+[debug] [2025-08-24T19:09:34.721Z] >>> [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/my-portpolio-98534:test [omitted]
+[debug] [2025-08-24T19:09:36.455Z] <<< [apiv2][status] POST https://firebaserules.googleapis.com/v1/projects/my-portpolio-98534:test 200
+[debug] [2025-08-24T19:09:36.455Z] <<< [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/my-portpolio-98534:test {}
+[info] +  cloud.firestore: rules file firestore.rules compiled successfully 
+[debug] [2025-08-24T19:09:36.457Z] Checked if tokens are valid: true, expires at: 1756066140885
+[debug] [2025-08-24T19:09:36.458Z] Checked if tokens are valid: true, expires at: 1756066140885
+[debug] [2025-08-24T19:09:36.458Z] >>> [apiv2][query] GET https://firestore.googleapis.com/v1/projects/my-portpolio-98534/databases/(default) [none]
+[debug] [2025-08-24T19:09:36.879Z] <<< [apiv2][status] GET https://firestore.googleapis.com/v1/projects/my-portpolio-98534/databases/(default) 200
+[debug] [2025-08-24T19:09:36.879Z] <<< [apiv2][body] GET https://firestore.googleapis.com/v1/projects/my-portpolio-98534/databases/(default) {"name":"projects/my-portpolio-98534/databases/(default)","uid":"01682bb8-0226-4fdb-973c-7d480c0e5272","createTime":"2025-08-10T13:09:46.198232Z","updateTime":"2025-08-10T13:09:46.198232Z","locationId":"asia-south2","type":"FIRESTORE_NATIVE","concurrencyMode":"PESSIMISTIC","versionRetentionPeriod":"3600s","earliestVersionTime":"2025-08-24T18:09:35.903822Z","appEngineIntegrationMode":"DISABLED","pointInTimeRecoveryEnablement":"POINT_IN_TIME_RECOVERY_DISABLED","deleteProtectionState":"DELETE_PROTECTION_DISABLED","databaseEdition":"STANDARD","freeTier":true,"etag":"IJeFqfCSpI8DMPXPsaq9iY8D"}
+[debug] [2025-08-24T19:09:36.881Z] Checked if tokens are valid: true, expires at: 1756066140885
+[debug] [2025-08-24T19:09:36.882Z] Checked if tokens are valid: true, expires at: 1756066140885
+[debug] [2025-08-24T19:09:36.882Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/my-portpolio-98534/releases pageSize=10&pageToken=
+[debug] [2025-08-24T19:09:38.246Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/my-portpolio-98534/releases 200
+[debug] [2025-08-24T19:09:38.246Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/my-portpolio-98534/releases {"releases":[{"name":"projects/my-portpolio-98534/releases/cloud.firestore","rulesetName":"projects/my-portpolio-98534/rulesets/cf0176af-1bda-4ff1-92b6-9bc69b56c1a1","createTime":"2025-08-10T13:09:56.058910Z","updateTime":"2025-08-24T18:48:59.101445Z"}]}
+[debug] [2025-08-24T19:09:38.247Z] Checked if tokens are valid: true, expires at: 1756066140885
+[debug] [2025-08-24T19:09:38.247Z] Checked if tokens are valid: true, expires at: 1756066140885
+[debug] [2025-08-24T19:09:38.248Z] >>> [apiv2][query] GET https://firebaserules.googleapis.com/v1/projects/my-portpolio-98534/rulesets/cf0176af-1bda-4ff1-92b6-9bc69b56c1a1 [none]
+[debug] [2025-08-24T19:09:39.726Z] <<< [apiv2][status] GET https://firebaserules.googleapis.com/v1/projects/my-portpolio-98534/rulesets/cf0176af-1bda-4ff1-92b6-9bc69b56c1a1 200
+[debug] [2025-08-24T19:09:39.726Z] <<< [apiv2][body] GET https://firebaserules.googleapis.com/v1/projects/my-portpolio-98534/rulesets/cf0176af-1bda-4ff1-92b6-9bc69b56c1a1 [omitted]
+[info] i  firestore: uploading rules firestore.rules... 
+[debug] [2025-08-24T19:09:39.729Z] Checked if tokens are valid: true, expires at: 1756066140885
+[debug] [2025-08-24T19:09:39.730Z] Checked if tokens are valid: true, expires at: 1756066140885
+[debug] [2025-08-24T19:09:39.730Z] >>> [apiv2][query] POST https://firebaserules.googleapis.com/v1/projects/my-portpolio-98534/rulesets [none]
+[debug] [2025-08-24T19:09:39.731Z] >>> [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/my-portpolio-98534/rulesets [omitted]
+[debug] [2025-08-24T19:09:40.394Z] <<< [apiv2][status] POST https://firebaserules.googleapis.com/v1/projects/my-portpolio-98534/rulesets 200
+[debug] [2025-08-24T19:09:40.395Z] <<< [apiv2][body] POST https://firebaserules.googleapis.com/v1/projects/my-portpolio-98534/rulesets {"name":"projects/my-portpolio-98534/rulesets/8b38350e-11ee-49f0-b0d0-866a391e31ff","source":{"files":[{"content":"rules_version = '2';\nservice cloud.firestore {\n  match /databases/{database}/documents {\n\n    function isAuthenticated() {\n      return request.auth != null;\n    }\n\n    function isNonEmptyString(field, maxLen) {\n      return request.resource.data[field] is string\n        && request.resource.data[field].size() > 0\n        && request.resource.data[field].size() <= maxLen;\n    }\n\n    // Publicly readable collections\n    match /projects/{projectId} {\n      allow read: if true;\n      allow create, update, delete: if isAuthenticated();\n    }\n    match /portfolio/{docId} {\n      allow read: if true;\n      allow create, update, delete: if isAuthenticated();\n    }\n    match /skills/{skillId} {\n      allow read: if true;\n      allow create, update, delete: if isAuthenticated();\n    }\n\n    // All other collections: only authenticated users can read/write\n    match /{document=**} {\n      allow read, write: if isAuthenticated();\n    }\n\n    // Messages data: allow anyone to create, and authenticated users to read, update, delete\n    match /messages/{messageId} {\n      allow create: if true;\n      allow read, update, delete: if isAuthenticated();\n    }\n\n    // Contact form: anyone can create; no read/update/delete from clients\n    match /contacts/{contactId} {\n      allow read, update, delete: if false;\n      allow create: if (\n  isNonEmptyString('name', 100) &&\n  isNonEmptyString('email', 320) &&\n  isNonEmptyString('subject', 150) &&\n  isNonEmptyString('message', 5000) &&\n  (!('status' in request.resource.data) || request.resource.data.status == 'new') &&\n  ('createdAt' in request.resource.data && request.resource.data.createdAt is timestamp) &&\n  request.resource.data.email.matches('.*@.*\\\\..*')\n      );\n    }\n  }\n}","name":"firestore.rules"}]},"createTime":"2025-08-24T19:09:39.285263Z","metadata":{"services":["cloud.firestore"]}}
+[debug] [2025-08-24T19:09:40.395Z] [rules] created ruleset projects/my-portpolio-98534/rulesets/8b38350e-11ee-49f0-b0d0-866a391e31ff
+[debug] [2025-08-24T19:09:40.396Z] [rules] releasing cloud.firestore/(default) with ruleset projects/my-portpolio-98534/rulesets/8b38350e-11ee-49f0-b0d0-866a391e31ff
+[debug] [2025-08-24T19:09:40.396Z] Checked if tokens are valid: true, expires at: 1756066140885
+[debug] [2025-08-24T19:09:40.396Z] Checked if tokens are valid: true, expires at: 1756066140885
+[debug] [2025-08-24T19:09:40.397Z] >>> [apiv2][query] PATCH https://firebaserules.googleapis.com/v1/projects/my-portpolio-98534/releases/cloud.firestore/(default) [none]
+[debug] [2025-08-24T19:09:40.397Z] >>> [apiv2][body] PATCH https://firebaserules.googleapis.com/v1/projects/my-portpolio-98534/releases/cloud.firestore/(default) {"release":{"name":"projects/my-portpolio-98534/releases/cloud.firestore/(default)","rulesetName":"projects/my-portpolio-98534/rulesets/8b38350e-11ee-49f0-b0d0-866a391e31ff"}}
+[debug] [2025-08-24T19:09:41.922Z] <<< [apiv2][status] PATCH https://firebaserules.googleapis.com/v1/projects/my-portpolio-98534/releases/cloud.firestore/(default) 200
+[debug] [2025-08-24T19:18:57.218Z] ----------------------------------------------------------------------
+[debug] [2025-08-24T19:18:57.225Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\kdev7\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js firestore:delete projects
+[debug] [2025-08-24T19:18:57.226Z] CLI Version:   14.14.0
+[debug] [2025-08-24T19:18:57.227Z] Platform:      win32
+[debug] [2025-08-24T19:18:57.227Z] Node Version:  v22.15.0
+[debug] [2025-08-24T19:18:57.227Z] Time:          Mon Aug 25 2025 00:48:57 GMT+0530 (India Standard Time)
+[debug] [2025-08-24T19:18:57.228Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-08-24T19:18:57.571Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-08-24T19:18:57.573Z] > authorizing via signed-in user (kdev7830@gmail.com)
+[debug] [2025-08-24T19:18:57.573Z] [iam] checking project my-portpolio-98534 for permissions ["datastore.entities.delete","datastore.entities.list","firebase.projects.get"]
+[debug] [2025-08-24T19:18:57.575Z] Checked if tokens are valid: true, expires at: 1756066140885
+[debug] [2025-08-24T19:18:57.575Z] Checked if tokens are valid: true, expires at: 1756066140885
+[debug] [2025-08-24T19:18:57.577Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-portpolio-98534:testIamPermissions [none]
+[debug] [2025-08-24T19:18:57.577Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-portpolio-98534:testIamPermissions x-goog-quota-user=projects/my-portpolio-98534
+[debug] [2025-08-24T19:18:57.577Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-portpolio-98534:testIamPermissions {"permissions":["datastore.entities.delete","datastore.entities.list","firebase.projects.get"]}
+[debug] [2025-08-24T19:19:10.451Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-portpolio-98534:testIamPermissions 200
+[debug] [2025-08-24T19:19:10.452Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-portpolio-98534:testIamPermissions {"permissions":["datastore.entities.delete","datastore.entities.list","firebase.projects.get"]}
+[error] 
+[error] Error: Must pass recursive or shallow option when deleting a collection.
+[debug] [2025-08-24T19:19:40.001Z] ----------------------------------------------------------------------
+[debug] [2025-08-24T19:19:40.005Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\kdev7\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js firestore:delete projects --recursive
+[debug] [2025-08-24T19:19:40.006Z] CLI Version:   14.14.0
+[debug] [2025-08-24T19:19:40.006Z] Platform:      win32
+[debug] [2025-08-24T19:19:40.006Z] Node Version:  v22.15.0
+[debug] [2025-08-24T19:19:40.006Z] Time:          Mon Aug 25 2025 00:49:40 GMT+0530 (India Standard Time)
+[debug] [2025-08-24T19:19:40.006Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2025-08-24T19:19:40.299Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2025-08-24T19:19:40.300Z] > authorizing via signed-in user (kdev7830@gmail.com)
+[debug] [2025-08-24T19:19:40.301Z] [iam] checking project my-portpolio-98534 for permissions ["datastore.entities.delete","datastore.entities.list","firebase.projects.get"]
+[debug] [2025-08-24T19:19:40.304Z] Checked if tokens are valid: true, expires at: 1756066140885
+[debug] [2025-08-24T19:19:40.304Z] Checked if tokens are valid: true, expires at: 1756066140885
+[debug] [2025-08-24T19:19:40.307Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-portpolio-98534:testIamPermissions [none]
+[debug] [2025-08-24T19:19:40.308Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-portpolio-98534:testIamPermissions x-goog-quota-user=projects/my-portpolio-98534
+[debug] [2025-08-24T19:19:40.308Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-portpolio-98534:testIamPermissions {"permissions":["datastore.entities.delete","datastore.entities.list","firebase.projects.get"]}
+[debug] [2025-08-24T19:19:55.062Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-portpolio-98534:testIamPermissions 200
+[debug] [2025-08-24T19:19:55.063Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-portpolio-98534:testIamPermissions {"permissions":["datastore.entities.delete","datastore.entities.list","firebase.projects.get"]}
+[error] 
+[error] Error: Command aborted.

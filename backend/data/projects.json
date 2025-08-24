@@ -1,0 +1,43 @@
+[
+  {
+    "title": "Online Voting System",
+    "description": "A secure and user-friendly online voting application built with Flask and MySQL. It allows users to register, log in, cast their vote once, and view election results in real-time. Admins can manage candidates, view voting statistics, and remove users or candidates when necessary.",
+    "image": "frontend/build/onlinevotingsystem.png",
+    "techStack": ["Flask", "Python", "MySQL", "bcrypt", "HTML/CSS"],
+    "category": "web",
+    "githubUrl":"https://github.com/kapildev3006/OnlineVotingSystem",
+    "demoUrl": "https://onlinevotingsystem-n0w6.onrender.com",
+    "featured": false
+  },
+  {
+    "title": "EyeCare AI (Flask Web App)",
+    "description": "A Flask-based web application for eye care management. It provides user and admin login, appointment booking, consultation assistance, feedback collection, and secure report handling with MySQL as the backend.",
+    "image": "frontend/build/onlinevotingsystem.png",
+    "techStack": ["Flask","MySQL","Flask-Mail (SMTP)","Werkzeug Security","Jinja2","Python"],
+    "category": "web",
+    "githubUrl": "https://github.com/kapildev3006/eyedisease",
+    "demoUrl": "https://eyedisease-vkzc.onrender.com",
+    "featured": false
+  },
+  {
+    "title": "FoodShare – Food Wastage Management Platform",
+    "description": "A responsive web application that helps reduce food waste by allowing users to share, donate, or sell excess food they cannot consume.",
+    "image": "frontend/build/onlinevotingsystem.png",
+    "techStack": ["Next.js","React","TypeScript","Tailwind CSS","Firebase (Auth, Firestore, Storage)","Cloudinary","Framer Motion","React Icons"],
+    "category": "web",
+    "githubUrl": "https://github.com/kapildev3006/FoodShare",
+    "demoUrl": "https://food-share-mu.vercel.app/",
+    "featured": false
+  },
+  {
+    "title": "Portfolio Website",
+    "description": "This portfolio website showcasing projects and contact form.",
+    "image": "frontend/build/onlinevotingsystem.png",
+    "techStack": ["React", "Framer Motion", "Tailwind"],
+    "category": "frontend",
+    "githubUrl": "https://github.com/youruser/portfolio",
+    "demoUrl": "https://yourdomain.com",
+    "featured": true
+  }
+]
+

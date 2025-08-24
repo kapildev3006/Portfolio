@@ -1,0 +1,31 @@
+{
+  "name": "portfolio-app",
+  "version": "1.0.0",
+  "description": "Personal Portfolio Web Application",
+  "main": "index.js",
+  "scripts": {
+    "dev": "node dev-setup.js",
+    "dev:watch": "concurrently \"npm run watch-frontend\" \"npm run start-backend\"",
+    "watch-frontend": "cd frontend && npm start",
+    "build-frontend": "cd frontend && npm run build",
+    "start-backend": "cd backend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start",
+    "install-all": "npm install && cd frontend && npm install && cd ../backend && npm install",
+    "clean": "rm -rf frontend/build"
+  },
+  "keywords": [
+    "portfolio",
+    "react",
+    "nodejs",
+    "firebase"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "dependencies": {
+    "@dataconnect/generated": "file:dataconnect-generated/js/example-connector"
+  }
+}
