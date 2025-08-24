@@ -15,6 +15,9 @@ import { signOut } from 'firebase/auth';
 import { auth } from '../firebase/config';
 import { usePortfolio } from '../context/PortfolioContext';
 import AdminProjects from './AdminProjects';
+import AdminSkills from './AdminSkills';
+import AdminMessages from './AdminMessages';
+import AdminProfile from './AdminProfile';
 
 const Admin = ({ onLogout }) => {
   const [activeTab, setActiveTab] = useState('dashboard');
@@ -120,6 +123,14 @@ const Admin = ({ onLogout }) => {
     switch (activeTab) {
       case 'dashboard':
         return renderDashboard();
+      case 'projects':
+        return <AdminProjects />;
+      case 'skills':
+        return <AdminSkills />;
+      case 'messages':
+        return <AdminMessages />;
+      case 'settings':
+        return <AdminProfile />;
       default:
         return renderDashboard();
     }
