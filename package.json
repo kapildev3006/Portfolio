@@ -27,6 +27,8 @@
   },
   "dependencies": {
     "@dataconnect/generated": "file:dataconnect-generated/js/example-connector",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
     "react-scripts": "^5.0.1"
   }
 }
